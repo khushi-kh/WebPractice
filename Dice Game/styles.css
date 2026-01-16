@@ -1,0 +1,34 @@
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+h1{
+    color: rebeccapurple;
+    margin-left: 90px;
+}
+
+.dice-container{
+    display: flex;
+    gap: 20px;
+}
+
+.dice{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    width: 200px;
+    height: 200px;
+}
+
+.dice p{
+    font-size: 5rem;
+}
+
+.btn{
+    font-size: xx-large;
+    margin-left: 125px;
+}
