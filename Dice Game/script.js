@@ -22,10 +22,10 @@ function rollDice(){
     }
 
     else if (num1 > num2){
-        headText.textContent = "Player 1 Wins";
+        headText.textContent = "Player 1 Wins🎉";
     }
 
-    else headText.textContent = "Player 2 Wins";
+    else headText.textContent = "Player 2 Wins🎉";
 }
 
 function resetGame(){

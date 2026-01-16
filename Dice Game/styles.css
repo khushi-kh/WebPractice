@@ -2,16 +2,39 @@ body{
     display: grid;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    height: 100vh;
+    background:
+  radial-gradient(
+    circle at center,
+    rgba(0, 0, 0, 0) 40%,
+    rgba(0, 0, 0, 0.35) 100%
+  ),
+  radial-gradient(
+    circle at 50% 40%,
+    rgba(255, 255, 255, 0.25) 0%,
+    rgba(255, 255, 255, 0.1) 30%,
+    transparent 60%
+  ),
+  radial-gradient(
+    circle at center,
+    #4988C4 0%,
+    #1C4D8D 55%,
+    #0F2854 100%
+  );
 }
 
 h1{
     color: rebeccapurple;
     text-align: center;
+    font-family: "Anton", sans-serif;
+    color: white;
+    font-size: 100px;
 }
 
 .dice-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
     gap: 20px;
 }
 
