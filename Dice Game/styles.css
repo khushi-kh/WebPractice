@@ -61,14 +61,73 @@ h1{
 
 }
 
-.blue{
+.yellow{
     background: linear-gradient(to bottom right, #fcff9e 0%, #c67700 100%);
     box-shadow:
     inset 2px 2px 6px rgba(255, 255, 255, 0.35),   /* top-left light */
     inset -2px -2px 6px rgba(0, 0, 0, 0.25),      /* bottom-right depth */
     0 8px 20px rgba(0, 0, 0, 0.35);               /* outer shadow */
 }
-#btn{
-    font-size: xx-large;
-    text-align: center;
+
+.btn-group{
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    margin-top: 30px;
 }
+
+.btn{
+    padding: 12px 30px;
+    font-family: "Poppins", sans-serif;
+    font-size: 15px;
+    letter-spacing: 1px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.25s ease;
+    color: white;
+    box-shadow: 0 6px 14px rgba(0,0,0,0.25);
+}
+
+/* Roll Button – neon green with darker edges */
+.roll{
+    background: linear-gradient(
+        to bottom,
+        #2dff9a,
+        #19d87a
+    );
+    border: 1px solid #0fbf68; /* darker green edge */
+    color: black;
+    box-shadow: 0 4px 10px rgba(45,255,154,0.35);
+}
+
+.roll:hover{
+    background: linear-gradient(
+        to bottom,
+        #3cffaa,
+        #1fe088
+    );
+    border: 1px solid #14a85f; /* slightly darker on hover */
+    box-shadow: 0 6px 14px rgba(45,255,154,0.5);
+}
+
+.roll:active{
+    transform: scale(0.96);
+}
+
+
+/* Reset Button – brighter grey with subtle gradient */
+.reset{
+    background: linear-gradient(to bottom, #8a8a8a, #5f5f5f);
+    color: #f5f5f5;
+}
+
+.reset:hover{
+    background: linear-gradient(to bottom, #9a9a9a, #6f6f6f);
+    box-shadow: 0 0 12px rgba(200,200,200,0.5);
+}
+
+.reset:active{
+    transform: scale(0.96);
+}
+

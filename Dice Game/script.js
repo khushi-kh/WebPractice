@@ -1,5 +1,5 @@
-let rollBtn = document.getElementById("rollBtn");
-let resetBtn = document.getElementById("resetBtn");
+let rollBtn = document.querySelector(".roll");
+let resetBtn = document.querySelector(".reset");
 let dice1 = document.getElementById("dice1");
 let dice2 = document.getElementById("dice2");
 let headText = document.querySelector("h1")
