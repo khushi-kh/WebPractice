@@ -51,11 +51,10 @@ button {
   color: white;
 }
 
-.white:active {
+.white.pressed{
   background: #e0e0e0;
 }
 
-.black:active {
+.black.pressed{
   background: #333;
 }
-

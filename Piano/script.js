@@ -1,5 +1,3 @@
-let totalKeys = document.querySelectorAll(".key").length;
-
 const soundMap = {
   'c': 'c.mp3',
   'c#': 'csharp.mp3',
@@ -35,18 +33,30 @@ function playSound(soundFile){
     audio.play();
 }
 
+function animateButton(activeButton){
+    activeButton.classList.add("pressed")
+    setTimeout(()=>{
+        activeButton.classList.remove("pressed")
+    }, 100 )
+}
+
 document.addEventListener("click", event=> {
   if (!event.target.classList.contains("key")) return;
 
-  let key = event.target.textContent.trim();
-  let soundFile = soundMap[key];
+  let key = event.target; // gives exact element that was clicked
+  let soundFile = soundMap[key.textContent.trim()];
 
   playSound(soundFile);
+  animateButton(key)
+
 });
 
 document.addEventListener("keydown", event =>{
     let key = event.key.toLowerCase();
     let soundFile = keySoundMap[key];
+    let pressedKey = document.querySelector(`.key[data-key="${key}"]`) //if user pressed key s then select element which have class key and data-key attribute set as s
 
     playSound(soundFile);
+    animateButton(pressedKey)
+    
 })
